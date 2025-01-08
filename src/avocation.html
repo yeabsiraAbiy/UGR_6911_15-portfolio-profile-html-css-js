@@ -4,20 +4,38 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <title>Avocation</title>  
+    <link rel="stylesheet" href="css/menuicon.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styleavocation.css">
 </head>  
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo"> 
-        <h1>YEABSIRA ABIY</h1>
-        <nav>
-            <ul>  
-                <li><a href="home.html">Home</a></li>  
-                <li><a href="aboutme.html">About Me</a></li>  
-                <li><a href="avocation.html" class="current_page">Avocation</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>  
-            </ul> 
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="logo"> 
+            <div class="mainheader"><h1>YEABSIRA ABIY</h1></div>  
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+                <nav>
+                    <ul class="nav-list">  
+                        <li><a href="home.html">Home</a></li>  
+                        <li><a href="AboutMe.html">AboutMe</a></li>  
+                        <li><a href="avocation.html" class="current_page">Avocation</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contactme.html">ContactMe</a></li>  
+                    </ul> 
+                </nav>
+                <nav class="sidebar">
+                    <div class="close-icon">X</div>
+                    <a href="home.html">Home</a>
+                    <a href="AboutMe.html">About</a>
+                    <a href="avocation.html" class="current_page">Avocation</a>
+                    <a href="cv.html">CV</a>
+                    <a href="contactme.html">ContactMe</a>
+                </nav>
     </header>
     <main>
         <section id="Avocation">
@@ -26,7 +44,7 @@
                 From sports, I like competitive games like bowling and swimming, which I do once a month or during my summer break.
                 Additionally, I love sitting back and watching a good basketball game from time to time.</p>
             <div class="video-container">
-                <article>
+                <article class="video-card">
                     <h2>Playing Cards</h2>
                     <video controls>
                         <source src="videos/playing_card.mp4" type="video/mp4">
@@ -34,7 +52,7 @@
                     </video>
                     <p>Playing cards is one of the best games to enjoy with family. It's a great way to chat and bond while having fun.</p>
                 </article>
-                <article>
+                <article class="video-card">
                     <h2>Bowling</h2>
                     <video controls>
                         <source src="videos/Bowling.mp4" type="video/mp4">
@@ -42,7 +60,7 @@
                     </video>
                     <p>Bowling is perfect for playing with friends and siblings. It's a competitive and engaging game. There are places in Addis where you can play, and it's a lot of fun.</p>
                 </article>
-                <article>
+                <article class="video-card">
                     <h2>Swimming</h2>
                     <video controls>
                         <source src="videos/Swimming.mp4" type="video/mp4">
@@ -50,7 +68,7 @@
                     </video>
                     <p>Initially, I disliked swimming and was afraid of it, but my father coached me well, and now I enjoy it. For those who hate or fear it, I encourage you to face your fears and enjoy the experience.</p>
                 </article>
-                <article>
+                <article class="video-card" id="hide-on-desktop">
                     <h2>Watching Volleyball</h2>
                     <video controls>
                         <source src="videos/Volleyball.mp4" type="video/mp4">
@@ -63,5 +81,6 @@
             <p>Looking ahead, there are several things I would love to do. One of my top goals is to travel more, which I haven’t been able to do often because of school. There are many places on my bucket list, and I hope to visit them soon. Another goal is to learn a completely new language. This has been a plan of mine for a while, and I hope to achieve it in the near future.</p>
         </section>
     </main>
+    <script src="js/portifolio.js"></script>
 </body>
 </html>

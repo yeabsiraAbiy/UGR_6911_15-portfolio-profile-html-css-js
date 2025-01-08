@@ -3,48 +3,72 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>aboutMe</title>  
+    <title>aboutMe</title> 
+    <link rel="stylesheet" href="css/menuicon.css">
+    <link rel="stylesheet" href="css/common.css"> 
+    <link rel="stylesheet" href="css/styleAboutMe.css">
 </head>  
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo"> 
-        <h1>YEABSIRA ABIY</h1>
-        <nav>
-            <ul>  
-                <li><a href="home.html">Home</a></li>  
-                <li><a href="AboutMe.html" class="current_page">AboutMe</a></li>  
-                <li><a href="avocation.html">Avocation</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contactme.html">ContactMe</a></li>  
-            </ul> 
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="logo"> 
+            <div class="mainheader"><h1>YEABSIRA ABIY</h1></div>  
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+                <nav>
+                    <ul class="nav-list">  
+                        <li><a href="home.html">Home</a></li>  
+                        <li><a href="AboutMe.html" class="current_page">AboutMe</a></li>  
+                        <li><a href="avocation.html">Avocation</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contactme.html">ContactMe</a></li>  
+                    </ul> 
+                </nav>
+                <nav class="sidebar">
+                    <div class="close-icon">X</div>
+                    <a href="home.html">Home</a>
+                    <a href="AboutMe.html" class="current_page">About</a>
+                    <a href="avocation.html">Avocation</a>
+                    <a href="cv.html">CV</a>
+                    <a href="contactme.html">ContactMe</a>
+                </nav>
     </header>
     <main>
         <section id="AboutMe">
-            <h2>Short Biography</h2>
-            <p>Ever since high school, I've been passionate about technology, especially after developing my first webpage with friends and watching TV programs about coding and computers. This early exposure made it easy for me to choose my major in university. Currently, I am pursuing a degree in Software Engineering at Addis Ababa University, where I have been immersed in learning everything from coding fundamentals to advanced software engineering concepts.</p>
-            <img src="images/image1.jpg" alt="image1">
-            <table> 
-                <tr> 
-                    <th>Level</th> 
-                    <th>Institution & Details</th> 
-                </tr> 
-                <tr> 
-                    <td>Elementary School</td> 
-                    <td>Gondar University Community School, KG to 8<sup>th</sup> Grade</td> 
-                </tr> 
-                <tr> 
-                    <td>High School</td> 
-                    <td>Dream Success High School, graduated 2022</td> 
-                </tr> 
-                <tr> 
-                    <td>University</td> 
-                    <td>Addis Ababa University, Bachelor's in Software Engineering (expected 2026/27)</td> 
-                </tr>
-            </table>
-            
-            <p>One of my mentors used to say, "Coding is just the beginning. To truly thrive as a programmer, one must embrace continuous learning, adapt to evolving challenges, and excel in collaboration with a team." Over the years, I've embraced this philosophy, continually improving my skills in problem-solving, teamwork, consistency, and communication.</p>
+            <h2 class="section-title">Short Biography</h2>
+            <p class="biography-text">Ever since high school, I've been passionate about technology, especially after developing my first webpage with friends and watching TV programs about coding and computers. This early exposure made it easy for me to choose my major in university. Currently, I am pursuing a degree in Software Engineering at Addis Ababa University, where I have been immersed in learning everything from coding fundamentals to advanced software engineering concepts.</p>
+            <div class="central-containt">
+                <div class="main-pic">
+                    <img src="images/image1.png" alt="image1" class="profile-image">
+                </div>
+                <div class="education-table">
+                    <table> 
+                        <tr> 
+                            <th>Level</th> 
+                            <th>Institution & Details</th> 
+                        </tr> 
+                        <tr> 
+                            <td>Elementary School</td> 
+                            <td>Gondar University Community School, KG to 8<sup>th</sup> Grade</td> 
+                        </tr> 
+                        <tr> 
+                            <td>High School</td> 
+                            <td>Dream Success High School, graduated 2022</td> 
+                        </tr> 
+                        <tr> 
+                            <td>University</td> 
+                            <td>Addis Ababa University, Bachelor's in Software Engineering (expected 2026/27)</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="mentor-quote">One of my mentors used to say, "Coding is just the beginning. To truly thrive as a programmer, one must embrace continuous learning, adapt to evolving challenges, and excel in collaboration with a team." Over the years, I've embraced this philosophy, continually improving my skills in problem-solving, teamwork, consistency, and communication.</p>
         </section>
     </main>
+    <script src="js/portifolio.js"></script>
 </body>
 </html>

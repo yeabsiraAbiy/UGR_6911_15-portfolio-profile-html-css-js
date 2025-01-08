@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <title>ContactMe</title>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stylecontactme.css">
+    <link rel="stylesheet" href="css/menuicon.css">
 </head>  
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo"> 
-        <h1>YEABSIRA ABIY</h1>
-        <nav>
-            <ul>  
-                <li><a href="home.html">Home</a></li>  
-                <li><a href="AboutMe.html">AboutMe</a></li>  
-                <li><a href="avocation.html">Avocation</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contactme.html" class="current_page">ContactMe</a></li>  
-            </ul> 
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="logo"> 
+            <div class="mainheader"><h1>YEABSIRA ABIY</h1></div>  
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        
+        </div>
+                <nav>
+                    <ul class="nav-list">  
+                        <li><a href="home.html">Home</a></li>  
+                        <li><a href="AboutMe.html">AboutMe</a></li>  
+                        <li><a href="avocation.html">Avocation</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contactme.html" class="current_page">ContactMe</a></li>  
+                    </ul> 
+                </nav>
+                <nav class="sidebar">
+                    <div class="close-icon">X</div>
+                    <a href="home.html">Home</a>
+                    <a href="AboutMe.html">About</a>
+                    <a href="avocation.html">Avocation</a>
+                    <a href="cv.html">CV</a>
+                    <a href="contactme.html"  class="current_page">ContactMe</a>
+                </nav>
     </header>
     <main>
         <section id="ContactMe">
@@ -27,7 +46,7 @@
                 <p>Hi there! I would love to hear from you. If you have any questions, ideas, or just want to chat, don't hesitate to reach out!</p>
             </div>
 
-            <div class="container">
+            <div class="contact-container">
                 <div class="contact-info">
                     <div class="box">
                         <div class="icon"><i class="fa-solid fa-phone"></i></div>
@@ -39,7 +58,7 @@
                     <div class="box">
                         <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="text">
-                            <h3>My location</h3>
+                            <h3>My Location</h3>
                             <p>5-Killo, Addis Ababa, Ethiopia</p>
                         </div>    
                     </div>
@@ -52,7 +71,7 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form>
+                    <form id="contactform">
                         <h2>Send Message</h2>
                         <div class="inputBox">
                             <input type="text" name="username" required="required">
@@ -63,17 +82,17 @@
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required = "required"></textarea>
+                            <textarea required="required"></textarea>
                             <span>Type your Message...</span>
                         </div>
-                        <div class="inputBox">
-                            <input type="submit" name="button" value="send">
+                        <div class="input-button">
+                            <input type="submit" name="button" value="Send">
                         </div>
                     </form>
                 </div>
             </div>
-                 
         </section>
     </main>
+    <script src="js/portifolio.js"></script>
 </body>
 </html>

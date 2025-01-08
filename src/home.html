@@ -3,30 +3,52 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Home</title>  
+    <title>Home</title> 
+    <link rel="stylesheet" href="css/menuicon.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stylehome.css">
 </head>  
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo"> 
-        <h1>YEABSIRA ABIY</h1>
-        <nav>
-            <ul>  
-                <li><a href="home.html" class="current_page">Home</a></li>  
-                <li><a href="AboutMe.html">AboutMe</a></li>  
-                <li><a href="avocation.html">Avocation</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contactme.html">ContactMe</a></li>  
-            </ul> 
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="logo"> 
+            <div class="mainheader"><h1>YEABSIRA ABIY</h1></div> 
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <nav>
+                    <ul class="nav-list">  
+                        <li><a href="home.html" class="current_page">Home</a></li>  
+                        <li><a href="AboutMe.html">AboutMe</a></li>  
+                        <li><a href="avocation.html">Avocation</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contactme.html">ContactMe</a></li>  
+                    </ul> 
+                </nav>
+                <nav class="sidebar">
+                    <div class="close-icon">X</div>
+                    <a href="home.html"  class="current_page">Home</a>
+                    <a href="AboutMe.html">About</a>
+                    <a href="avocation.html">Avocation</a>
+                    <a href="cv.html">CV</a>
+                    <a href="contactme.html">ContactMe</a>
+                </nav>
     </header>
     <main>
-        <section id="Home">
-            <h3>Hello, I'm</h3>
-            <h2>YEABSIRA</h2>
-            <p>Dedicated Software Engineer specializing in crafting seamless user experiences. Always eager to take on new challenges.</p>
-            <img src="images/image1.jpg" alt="image1">
-
+        <section id="home">
+            <div class="introduction">
+                <h3>Hello, I'm</h3>
+                <h2>YEABSIRA</h2>
+                <p><b>Dedicated Software Engineer specializing in crafting seamless user experiences. Always eager to take on new challenges.</b></p>
+            </div>
+            <div class="introduction-pic">
+                <img src="images/image1.png" alt="image of Yeabsira" class="profile-image">
+            </div>
         </section>
     </main>
+    <script src="js/portifolio.js"></script>
 </body>
 </html>
