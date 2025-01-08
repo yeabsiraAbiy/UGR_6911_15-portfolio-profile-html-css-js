@@ -1,0 +1,202 @@
+body {
+    background-color: #ffdee8;
+}
+
+h2, h3 {
+    color: #330000;
+}
+
+p {
+    color: #7a1f47;
+}
+
+.content {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 33.3%;
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.box .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.form {
+    width: 45%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF4F8;
+    border: 1px solid #7a1f47;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form form h2 {
+    text-align: center;
+    color: #b03a5b;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+input[type="text"], input[type="email"], .inputBox textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #7a1f47;
+    border-radius: 5px;
+    box-sizing: border-box;   
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    color: #b03a5b;
+}
+
+input[type="submit"] {
+    background-color: #f8a5c2;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 35%;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+    background-color: #eee8e8;
+    color: #f8a5c2;
+}
+
+input[type="submit"]:visited {
+    background-color: #7a1f47;
+    color: #ffffff;
+}
+
+.input-button {
+    display: flex; 
+    justify-content: right; 
+    align-items: right; 
+    text-align: center;
+}
+
+/* Mobile Portrait Styles */
+@media (max-width: 375px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .form {
+        width: 100%;
+    }
+}
+
+/* Tablet Portrait Styles */
+@media (min-width: 376px) and (max-width: 744px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .form {
+        width: 100%;
+    }
+}
+
+/* Phone Landscape Styles */
+@media (min-width: 745px) and (max-width: 812px) {
+    .contact-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .form {
+        width: 50%;
+    }
+}
+
+/* Tablet Landscape Styles */
+@media (min-width: 813px) and (max-width: 1133px) {
+    .contact-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .form {
+        width: 50%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1134px) and (max-width: 1440px) {
+    .contact-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact-info,
+    .form {
+        width: 48%;
+    }
+}

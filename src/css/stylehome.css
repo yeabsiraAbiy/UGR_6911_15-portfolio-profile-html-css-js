@@ -1,0 +1,82 @@
+.introduction {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+}
+
+.introduction h3 {
+    font-size: 12px;
+    color: #ffb7ce;
+    margin-bottom: 0;
+}
+
+.introduction h2 {
+    font-size: 36px;
+    color: #ff92b5;
+    margin-top: 5px; /* Adjust the spacing */ 
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 16px;
+    color: #7A1F47;
+    margin-top: 20px;
+}
+
+.introduction-pic {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centering the container */
+    margin-top: 100px;
+    
+}
+
+.profile-image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+
+/* For phone portrait and landscape mode */
+@media (max-width: 767px) {
+    .introduction, .introduction-pic {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    #home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .introduction {
+        text-align: left;
+        max-width: 40%;
+        
+    }
+
+    .introduction h3, .introduction h2, .introduction p {
+        text-align: center;
+    }
+    .introduction-pic {
+        max-width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centering the container */
+        margin-top: 30px;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #330000;
+    text-align: left;
+}
+
+.biography-text, .mentor-quote {
+    margin-bottom: 20px;
+    color:#7a1f47;
+    text-align: left;
+}
+
+.central-containt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-pic {
+    max-width: 33.3%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 2px solid #ff92b5;
+}
+
+.education-table {
+    max-width: 66.6%;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7a1f47;
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #ffdee8;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+    .central-containt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-pic, .education-table {
+        max-width: 100%;
+    }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .section-title, .biography-text, .mentor-quote {
+        text-align: left;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+#Avocation {
+    background-color: #FFF4F8;
+    padding: 20px;
+    
+}
+
+.video-container {
+    display: grid;
+    gap: 20px;
+}
+
+.video-card video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: #330000;
+}
+p{
+    color: #7a1f47;
+}
+@media (min-width: 1134px) and (max-width: 1440px) {
+    .video-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #hide-on-desktop { 
+        display: none;
+    }
+}
+
+@media (min-width: 745px) and (max-width: 1133px) {
+    .video-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 376px) and (max-width: 744px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+
+
+}
