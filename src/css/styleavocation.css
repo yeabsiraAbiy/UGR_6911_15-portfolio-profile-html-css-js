@@ -7,12 +7,17 @@
 .video-container {
     display: grid;
     gap: 20px;
+    padding-left: 1%;
 }
 
 .video-card video {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
+    transition: transform 0.3s ease;
+}
+.video-card:hover video{
+    transform: scale(1.1); /* Zoom effect */
 }
 h2{
     color: #330000;

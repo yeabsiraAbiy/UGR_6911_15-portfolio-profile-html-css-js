@@ -6,16 +6,20 @@
 }
 
 .introduction h3 {
-    font-size: 12px;
+    font-size: 1rem;
     color: #ffb7ce;
     margin-bottom: 0;
 }
 
 .introduction h2 {
-    font-size: 36px;
-    color: #ff92b5;
-    margin-top: 5px; /* Adjust the spacing */ 
-    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #fcb5d3, #f581a4, #fc5b9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 .introduction p {
@@ -39,9 +43,6 @@
     margin: 0 auto;
 }
 
-/* Responsive Styles */
-
-/* For phone portrait and landscape mode */
 @media (max-width: 767px) {
     .introduction, .introduction-pic {
         display: block;
@@ -78,5 +79,14 @@
 
     .profile-image {
         max-width: 100%;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fcb5d3, 0 0 10px #f581a4, 0 0 20px #fc5b9e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fdc1da, 0 0 30px #f38baa, 0 0 50px #fa6ca7;
     }
 }

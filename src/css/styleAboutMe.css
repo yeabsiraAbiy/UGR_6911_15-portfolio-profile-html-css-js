@@ -1,3 +1,9 @@
+#AboutMe{
+    padding-left: 2%;
+}
+p{
+    line-height: 1.7; 
+}
 .section-title {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -39,6 +45,7 @@
     margin-bottom: 20px;
     text-align: center;
     color: #7a1f47;
+    box-shadow:rgba(180, 83, 107, 0.4);
 }
 
 .education-table th, .education-table td {
@@ -48,9 +55,13 @@
 }
 
 .education-table th {
-    background-color: #ffdee8;
+    background-color: rgba(226, 148, 174, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+tr:hover {
+    background-color: #fcc8db;
+    cursor: pointer;
+}
 /* Responsive styles for mobile */
 @media (max-width: 767px) {
     .central-containt {
